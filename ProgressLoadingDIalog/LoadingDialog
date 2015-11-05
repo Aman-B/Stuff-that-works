@@ -1,0 +1,46 @@
+//A loading bar which shows progress %
+
+barProgressDialog = new ProgressDialog(MainActivity.this);
+
+		barProgressDialog.setTitle("Downloading Image ...");
+		barProgressDialog.setMessage("Download in progress ...");
+		barProgressDialog.setProgressStyle(barProgressDialog.STYLE_HORIZONTAL);
+		barProgressDialog.setProgress(0);
+		barProgressDialog.setMax(20);
+		barProgressDialog.show();
+
+
+		//Put this in preexcute 
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+
+					// Here you should write your time consuming task...
+					while (barProgressDialog.getProgress() <= barProgressDialog.getMax()) {
+
+						Thread.sleep(2000);
+
+						updateBarHandler.post(new Runnable() {
+
+                            public void run() {
+				
+				//in on progress update
+                            	barProgressDialog.incrementProgressBy(2);
+
+                              }
+
+                          });
+
+						if (barProgressDialog.getProgress() == barProgressDialog.getMax()) 								//in post execute								
+							barProgressDialog.dismiss();
+
+						}
+					}
+				} catch (Exception e) {
+				}
+			}
+		}).start();
+
+
+//no xml needed.

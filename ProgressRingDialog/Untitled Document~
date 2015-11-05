@@ -1,0 +1,14 @@
+
+//In the pre-exceute method of asyncTask
+
+ProgressDialog ringProgressDialog= ProgressDialog.show(MainActivity.con,"Please wait...","Downloading stuff", true);
+        ringProgressDialog.setCancelable(true);
+     
+
+//In post-execute method of asyncTask
+ringProgressDialog.dismiss(true);
+
+
+//No XML needed.
+
+

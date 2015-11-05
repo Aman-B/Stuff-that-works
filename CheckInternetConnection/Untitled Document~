@@ -1,0 +1,26 @@
+/* 
+   This method returns boolean, giving the value of internet connection.
+   NetworkInfo saves the value of getActiveNetwokInfo; which checks if the
+   device has any active available network. Specifically added for airplane mode. 
+
+*/	
+
+
+
+  public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnectedorConnecting();
+
+// Or you can use isConnected() only, if you badly want some internet connection.
+
+    }
+
+
+//Permission needed.
+
+
+
+
+

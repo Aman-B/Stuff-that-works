@@ -7,4 +7,4 @@ Methods Enclosed:
 
 2. ProgressRingDialog - Shows a loading ring while the data loads in background.
 
-3. CheckInternetConnection - Checks if device is online, returns boolean value according.
+3. CheckInternetConnection - Checks if device is online, returns boolean value accordingly.

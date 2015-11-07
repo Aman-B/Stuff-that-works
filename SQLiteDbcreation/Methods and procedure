@@ -1,0 +1,5 @@
+The best way to declare sql db and use it is given here: http://developer.android.com/training/basics/data-storage/databases.html
+
+Contains contract,dbhelper and query methods' info.
+
+Worked well, so far.

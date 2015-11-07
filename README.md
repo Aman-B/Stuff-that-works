@@ -8,3 +8,5 @@ Methods Enclosed:
 2. ProgressRingDialog - Shows a loading ring while the data loads in background.
 
 3. CheckInternetConnection - Checks if device is online, returns boolean value accordingly.
+
+4. SQLdbcreation - As the name suggets, contains all the basic info on how to create and sqlite database in android.

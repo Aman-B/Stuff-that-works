@@ -1,7 +1,7 @@
 # Stuff-that-works
 A repo for various methods in Android, to perform different functions.
 
-Methods Enclosed:
+Methods Inside:
 
 1. ProgressLoadingDialog - Shows a loading bar while the data loads in background.
 
@@ -11,4 +11,4 @@ Methods Enclosed:
 
 4. SQLdbcreation - As the name suggets, contains all the basic info on how to create and sqlite database in android.
 
-5.OnClickListener - Onclicklistener for listview items, after listview has been converted using viewholder.
+5. OnClickListener - Onclicklistener for listview items, after listview has been converted using viewholder.

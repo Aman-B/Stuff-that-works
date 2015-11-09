@@ -1,0 +1,12 @@
+//This method can be used to set clicklistener for customview(view returned after putting listview in viewholder.)
+
+
+private View.OnClickListener mOnTitleClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            final int position = MainActivity.my_listview.getPositionForView( v);
+            Log.v("See", "Title clicked, row "+position);
+        }
+    };
+
+

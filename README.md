@@ -10,3 +10,5 @@ Methods Enclosed:
 3. CheckInternetConnection - Checks if device is online, returns boolean value accordingly.
 
 4. SQLdbcreation - As the name suggets, contains all the basic info on how to create and sqlite database in android.
+
+5.OnClickListener - Onclicklistener for listview items, after listview has been converted using viewholder.
